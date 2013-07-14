@@ -5,11 +5,14 @@
 int __init init_hello(void)
 {
 	printk(KERN_ALERT "[module Message] Hello, module.\n");
+	
+	/*		editing log....	 */
 	return 0;
 }	
 
 void __exit exit_hello(void)
 {
+	/*	 editing log!!!!!	*/
 	printk(KERN_ALERT "[module Message] Do you really want to break up with me?\n");
 }
 
